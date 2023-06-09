@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(246, 231, 213);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.panel-container {
+    max-width: 400px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 90%;
+}
+
+.panel-container strong {
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.rating-container {
+    display: flex;
+    margin: 10px 0;
+}
+
+.rating {
+    flex: 1;
+    cursor: pointer;
+    padding: 20px;
+    margin: 10px 5px;
+}
+.rating:hover,
+.rating.active {
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rating img {
+    width: 60px;
+    height: 60px;
+}
+
+.rating small {
+    color: #555;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 10px 0 0;
+}
+
+.rating:hover small,
+.rating.active small {
+    color: #111;
+}
+
+.button {
+    background-color: #312f2d;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    padding: 12px 30px;
+    cursor: pointer;
+}
+
+.button:focus {
+    outline: 0;
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+.fa-heart {
+    color: rgb(230, 46, 46);
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.feedback-text{
+    letter-spacing: 1px;
+}
